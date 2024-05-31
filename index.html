@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Kyrene Chua</div> 
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contacts">Contacts </a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav" >
+        <div class="logo"> Kyrene Chua</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Kyrene Chua profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Kyrene Chua</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/KyreneChua_resume.pdf')">
+                    Open Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/kyrenechua/'" 
+                />
+                <img src="./assets/github.png" 
+                    alt="My GitHub profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/kyrenechua'" 
+                />   
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                        />
+                        <h3>Currently</h3>
+                        <p>AI Developer Intern at SAP SE</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                            alt="Education icon" 
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering in Computer Engineering, Honours <br> <br> Expected Graduation: May 2025</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a final year undergraduate studying Computer Engineering at 
+                        the National University of Singapore, under the Engineering 
+                        Scholarship Program. I am highly passionate about machine learning 
+                        and artificial intelligence, and hope to be able to make use of 
+                        skills and knowledge to enact positive changes in society one day.
+                        <br> <br>
+                        Notable Coursework: <br>
+                        CS2040C Data Structures and Algorithms in C++, 
+                        CS2113 Software Engineering and Object-Oriented Programming, CS3244 
+                        Machine Learning, CS2102 Database Systems
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+        />
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience-details-container">
+            <div class="experience-about-containers">
+                    <h2 class="experience-sub-title">Application Development Intern</h2>
+                    <h3 class="experience-company">Defence Science and Technology Agency</h3>
+                    <h4 class="experience-duration">May 2023 - Dec 2023</h4>
+                    <div class="internship-detail-container">
+                        <content>
+                            <ul>
+                                <li>Designed and constructed various components of a robust data analytics system using Python,
+                                    Numpy, and Panda libraries, encompassing data collection, database storage, data modelling, and
+                                    knowledge representation, which was used by the department to analyse company data</li>
+                                <li>Integrated advanced machine learning and artificial intelligence modules to enhance data analytics
+                                    capabilities, to boost efficiency of the system and quality of analytics</li>
+                                <li>Utilised Natural Language Processing (NLP) and other analytics tools to detect and access the virality
+                                    of divisive issues and their influence on audience</li>
+                                <li>Developed a Question-Answer system using Generative AI, LLMs and Prompt Engineering concepts
+                                    for the department to use with company data, decreasing the time taken to sieve through company
+                                    data to find certain information</li>
+                              </ul> 
+                        </content>
+                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="experience-about-containers">
+                    <h2 class="experience-sub-title">STEM (Coding) Undergraduate Intern</h2>
+                    <h3 class="experience-company">OCBC Bank (Global Legal and Compliance)</h3>
+                    <h4 class="experience-duration">May 2022 - Aug 2022</h4>
+                    <div class="internship-detail-container">
+                        <content>
+                            <ul>
+                                <li>Programmed a software for data entry automation which helped to reduce human error and time
+                                    taken by almost 80%, using Visual Basic for Applications (VBA) Language</li>
+                                <li>Developed Excel Macros for data analysis and presentation for the Bank’s yearly analysis of risk
+                                    management data, which boasts efficient and accurate data collection and dashboard creation by
+                                    using VBA</li>
+                                <li>Engineered a data migration and presentation system for the department using VBA, increasing
+                                    the speed and accuracy of the data updates and charts creation by about 90%, hence assisting the
+                                    department in their monthly meetings regarding the analysis of the Bank’s data</li>
+                              </ul> 
+                        </content>
+                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="experience-about-containers">
+                    <h2 class="experience-sub-title">NUS Engineering Outreach Program Teaching Assistant </h2>
+                    <h3 class="experience-company">NUS Faculty of Engineering</h3>
+                    <h4 class="experience-duration">Mar 2022 - May 2022</h4>
+                    <div class="internship-detail-container">
+                        <content>
+                            <ul>
+                                <li>Mentored in the teaching of the basics of the Arduino to 30 college students in Hwa Chong Institution
+                                    by providing assistance as well as knowledge so that participants are able to build their own robot
+                                    cars with the Arduino</li>
+                                <li>Worked in a team with a fellow course mate under 2 NUS Professors to teach participants</li>
+                                <li>Highly successful mentorship as measured by the 100% completion rate of participants</li>
+                              </ul> 
+                        </content>
+                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow" 
+            onclick="location.href='./#skills'"
+        />
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C++/C</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Developer Tools and Libraries</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Docker</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>NumPy</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Pandas</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Matplotlib</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>SciPy</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Huggingface</h3> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Knowledge</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Machine Learning</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Generative AI</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Prompt Engineering</h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Large Language Models</h3> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Certifications</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3><a href="https://courses.edx.org/certificates/0ca2c23f09454fad933483c7a3cd23ac"> MIT_6.81x Machine Leaning with Python</a></h3> 
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                alt="Skills icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3><a href="https://www.coursera.org/account/accomplishments/certificate/KZ5HW3J6QTWK">Generative AI for LLMs</a></h3> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Projects</h1>
+        <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow" 
+            onclick="location.href='./#contacts'"
+        />
+    </section>
+
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:cwx.kyrene@gmail.com">cwx.kyrene@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/kyrenechua/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Experience</a></li>
+                    <li> <a href="#skills">Skills</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contacts">Contacts </a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Kyrene Chua. All rights reserved.</p>
+      </footer>
+    
+    <script src="script.js"> </script>
+</body>
+</html>
