@@ -4,11 +4,14 @@
 * {
     margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+}
 
-  body {
+body {
     font-family: "Poppins", sans-serif;
-  }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
   html {
     scroll-behavior: smooth;
@@ -31,6 +34,7 @@ nav,
 }
 
 nav {
+    z-index: 2;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
@@ -146,8 +150,9 @@ a:hover {
 
 /* SECTIONS */
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 8vh;
+    padding-bottom:8vh;
+    height: autp;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -155,6 +160,9 @@ section {
   
 .section-container {
     display: flex;
+    gap: 4rem;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 /* PROFILE SECTION */
@@ -393,10 +401,6 @@ article .icon {
     cursor: default;
 }
 
-/* PROJECTS SECTION */
-#projects {
-    position: relative;
-}
 
 /* CONTACTS SECTION */
 #contact {
